@@ -6,7 +6,7 @@
     margin: 0px auto;
     padding: 50px 0px 50px 0px;
     border-bottom: 1px ridge gray;
-    min-height: 400px;
+    min-height: 200px;
 }
 .footer {
     background-color: #009246;
@@ -36,4 +36,5 @@ body{
 }
 #reserve1{
     background-color: #ce2b37;
+    color: floralwhite;
 }
