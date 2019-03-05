@@ -1,0 +1,91 @@
+.row-header {
+    margin: 0px auto;
+    padding: 0px auto;
+}
+.row-content {
+    margin: 0px auto;
+    padding: 50px 0px 50px 0px;
+    border-bottom: 1px ridge gray;
+    min-height: 400px;
+}
+.footer {
+    background-color: #D1C4E9;
+    margin: 0px auto;
+    padding: 20px 0px 20px 0px;
+}
+.jumbotron {
+    padding: 70px 30px 70px 30px;
+    margin: 0px auto;
+    background: #9575CD;
+    color: floralwhite;
+}
+.address {
+    font-size: 80%;
+    margin: 0px;
+    color: #0f0f0f;
+}
+body{
+    padding:50px 0px 0px 0px;
+    z-index:0;
+}
+.navbar-dark {
+     background-color: #512DA8;
+}
+#reserve1{
+    background-color: rgb(235, 201, 8)
+}
+.tab-content {
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+}
+.carousel {
+    background:#512DA8;
+}
+.carousel-item {
+  height: 300px;
+}
+.carousel-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 300px;
+}
+.carousel-caption{     
+    right: 5%;
+    left: 30%;
+    top: 25%;
+}
+.carousel-indicators{
+    right: 5%;
+    left: 30%;
+    top: 90%;
+    bottom: 0;
+}
+#reserveButton{
+    color: black;
+}
+/* #nonsmoking{
+    color:white;
+    border-color: #009246;
+    background-color: #009246;
+}
+#smoking{
+    background-color: #ce2b37;
+} */
+#date{
+    margin: 0;
+    padding: 0;
+}
+#buttonDiv{
+    padding: 0;
+}
+#radioDiv{
+    padding: 0;
+}
+#carousel-button {
+    right:0px;
+    position: absolute;
+    bottom: 0px;
+}
