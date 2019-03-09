@@ -7,6 +7,7 @@ module.exports = function(grunt){
     require('jit-grunt')(grunt, {
         useminPrepare: 'grunt-usemin'
       });
+    grunt.loadNpmTasks('grunt-git');
 
     grunt.initConfig({
         sass: {
@@ -158,7 +159,35 @@ module.exports = function(grunt){
                     'dist/aboutus.html': 'dist/aboutus.html',
                 }
             }
-        }
+        },
+        gitadd: {
+            task: {
+                options: {
+                force: true,
+                all: true,
+                cwd: '.git'
+                },
+                files: {
+                src: ['.git/*.*']
+                }
+            }
+        },
+        gitcommit: {
+            your_target: {
+              options: {
+                cwd: '.git',
+                message: "Testing"
+              },
+              files: [
+                {
+                  cwd: '.git',
+                  src: ['dist/index.html'],
+                  expand: true
+                  
+                }
+              ]
+            }
+          }
 
     });
     
@@ -177,4 +206,5 @@ module.exports = function(grunt){
         'usemin',
         'htmlmin'
     ]);
+    grunt.registerTask('git', ['gitadd', 'gitcommit']);
 };
