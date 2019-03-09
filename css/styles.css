@@ -56,4 +56,21 @@ body {
   position: absolute;
   bottom: 0px; }
 
-/*# sourceMappingURL=styles.css.map */
+.modal .modal-header {
+  background: #512DA8;
+  color: floralwhite; }
+  .modal .modal-header .close {
+    color: floralwhite;
+    opacity: 1; }
+
+.modal .modal-body {
+  background: #D1C4E9; }
+
+#reserveButton {
+  color: #0f0f0f; }
+
+#date {
+  padding: 0; }
+
+#radioDiv {
+  padding: 0; }
