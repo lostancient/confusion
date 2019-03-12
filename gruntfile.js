@@ -169,12 +169,12 @@ module.exports = function(grunt){
                 directory: 'repo'
                 },
                 files: {
-                src: ['.git/*.*']
+                src: '.git/*.*'
                 }
             }
         },
         gitcommit: {
-            your_target: {
+            foo: {
               options: {
                 repository: 'https://github.com/JasonCBrand/confusion.git',
                 branch: 'master',
@@ -183,14 +183,29 @@ module.exports = function(grunt){
               },
               files: [
                 {
-                  cwd: '.git',
-                  src: ['dist/index.html'],
-                  expand: true
+                src:'.git/*.*'
+                //   ?expand: true
                   
                 }
               ]
             }
-          }
+        },
+        gitpush: {
+            options: {
+                repository: 'https://github.com/JasonCBrand/confusion.git',
+                branch: 'master',
+                directory: 'repo',
+                message: "Testing"
+            },
+            files: [
+                {
+                cwd: '.git',
+                src: ['dist/index.html'],
+                expand: true
+                }
+            ]
+            }
+  
 
     });
     
@@ -209,5 +224,5 @@ module.exports = function(grunt){
         'usemin',
         'htmlmin'
     ]);
-    grunt.registerTask('git', ['gitadd', 'gitcommit']);
+    grunt.registerTask('git', ['gitadd', 'gitcommit', 'gitpush']);
 };
