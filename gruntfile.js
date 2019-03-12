@@ -163,9 +163,10 @@ module.exports = function(grunt){
         gitadd: {
             task: {
                 options: {
-                force: true,
                 all: true,
-                cwd: '.git'
+                repository: 'https://github.com/JasonCBrand/confusion.git',
+                branch: 'master',
+                directory: 'repo'
                 },
                 files: {
                 src: ['.git/*.*']
@@ -175,7 +176,9 @@ module.exports = function(grunt){
         gitcommit: {
             your_target: {
               options: {
-                cwd: '.git',
+                repository: 'https://github.com/JasonCBrand/confusion.git',
+                branch: 'master',
+                directory: 'repo',
                 message: "Testing"
               },
               files: [
